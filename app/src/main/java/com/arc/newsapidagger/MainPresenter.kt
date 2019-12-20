@@ -17,7 +17,7 @@ class MainPresenter @Inject constructor(): MainContract.Presenter {
     }
 
     override fun callNewsAPI() {
-        val newsApi = NewsAPIProvider.create()
+        val newsApi = NewsAPIProvider().newsServive()
         newsApi.getHeadLines().enqueue(object: Callback<NewsModel>{
             override fun onFailure(call: Call<NewsModel>?, t: Throwable?) {
                 view.failedGetData(t?.message)

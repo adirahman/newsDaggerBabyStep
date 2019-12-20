@@ -1,16 +1,16 @@
 package com.arc.newsapidagger
 
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
+import javax.inject.Named
 
-object NewsAPIProvider{
+class NewsAPIProvider{
 
-    fun create():NewsService{
-        val retrofit = Retrofit.Builder()
-            .addConverterFactory(GsonConverterFactory.create())
-            .baseUrl("https://newsapi.org/v2/")
-            .build()
+    @Inject @field:Named("News") lateinit var newsClient:BaseRetrofitClient
 
-        return retrofit.create(NewsService::class.java)
+    fun newsServive():NewsService{
+        DaggerNetworkModule.create().inject(this)
+        return newsClient.let {
+            it.retrofitClient.create(NewsService::class.java)
+        }
     }
 }
