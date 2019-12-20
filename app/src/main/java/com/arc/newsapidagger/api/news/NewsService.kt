@@ -1,5 +1,6 @@
-package com.arc.newsapidagger
+package com.arc.newsapidagger.api.news
 
+import com.arc.newsapidagger.api.news.NewsModel
 import retrofit2.Call
 import retrofit2.http.GET
 

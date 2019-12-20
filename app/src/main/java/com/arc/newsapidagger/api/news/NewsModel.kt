@@ -1,4 +1,4 @@
-package com.arc.newsapidagger
+package com.arc.newsapidagger.api.news
 
 data class NewsModel(
     val status:String?,
