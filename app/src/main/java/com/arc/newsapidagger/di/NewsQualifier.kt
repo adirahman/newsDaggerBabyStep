@@ -6,4 +6,4 @@ import javax.inject.Qualifier
 @Qualifier
 @MustBeDocumented
 @Retention(AnnotationRetention.RUNTIME)
-annotation class NewsQualifier(val value: String = NetworkModule.NEWS)
+annotation class NewsQualifier

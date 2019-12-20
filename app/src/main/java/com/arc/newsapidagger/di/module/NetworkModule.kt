@@ -11,11 +11,6 @@ import javax.inject.Singleton
 @Module
 class NetworkModule {
 
-    companion object{
-        const val NEWS = "News"
-        const val FOOTBALL = "Football"
-    }
-
     //new URL
     @Provides @NewsQualifier
     open fun newsClient(): BaseRetrofitClient {
