@@ -1,7 +1,7 @@
-package com.arc.newsapidagger.api
+package com.arc.newsapidagger.api.footbal
 
 data class FootbalModel(
-    val api:Api?
+    val api: Api?
 )
 
 data class Api(

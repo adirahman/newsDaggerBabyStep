@@ -1,7 +1,7 @@
 package com.arc.newsapidagger.main
 
-import com.arc.newsapidagger.api.FootbalModel
-import com.arc.newsapidagger.api.FootballAPIProvider
+import com.arc.newsapidagger.api.footbal.FootbalModel
+import com.arc.newsapidagger.api.footbal.FootballAPIProvider
 import com.arc.newsapidagger.api.news.NewsAPIProvider
 import com.arc.newsapidagger.api.news.NewsModel
 import dagger.Module
@@ -35,7 +35,8 @@ class MainPresenter @Inject constructor(): MainContract.Presenter {
     }
 
     override fun callEnglandLeague() {
-        val footballApi = FootballAPIProvider().footballService()
+        val footballApi = FootballAPIProvider()
+            .footballService()
         footballApi.getEnglandLeague().enqueue(object : Callback<FootbalModel>{
             override fun onFailure(call: Call<FootbalModel>?, t: Throwable?) {
                 view.failedGetData(t?.message)

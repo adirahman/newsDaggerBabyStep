@@ -1,6 +1,6 @@
 package com.arc.newsapidagger.main
 
-import com.arc.newsapidagger.api.League
+import com.arc.newsapidagger.api.footbal.League
 import com.arc.newsapidagger.api.news.Articles
 
 class MainContract {

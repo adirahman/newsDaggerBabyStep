@@ -3,7 +3,7 @@ package com.arc.newsapidagger.main
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.arc.newsapidagger.*
-import com.arc.newsapidagger.api.League
+import com.arc.newsapidagger.api.footbal.League
 import com.arc.newsapidagger.api.news.Articles
 import com.arc.newsapidagger.di.component.DaggerActivityComponent
 import kotlinx.android.synthetic.main.activity_main.*

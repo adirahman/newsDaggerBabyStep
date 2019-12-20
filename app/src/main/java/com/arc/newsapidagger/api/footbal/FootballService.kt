@@ -1,4 +1,4 @@
-package com.arc.newsapidagger.api
+package com.arc.newsapidagger.api.footbal
 
 import retrofit2.Call
 import retrofit2.http.GET
