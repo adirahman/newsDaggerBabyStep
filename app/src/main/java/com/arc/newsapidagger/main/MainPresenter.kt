@@ -10,7 +10,7 @@ import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
-@Module
+
 class MainPresenter @Inject constructor(): MainContract.Presenter {
 
 
