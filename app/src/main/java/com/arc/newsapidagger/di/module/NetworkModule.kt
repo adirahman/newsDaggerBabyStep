@@ -5,8 +5,6 @@ import com.arc.newsapidagger.di.FootballQualifier
 import com.arc.newsapidagger.di.NewsQualifier
 import dagger.Module
 import dagger.Provides
-import javax.inject.Named
-import javax.inject.Singleton
 
 @Module
 class NetworkModule {

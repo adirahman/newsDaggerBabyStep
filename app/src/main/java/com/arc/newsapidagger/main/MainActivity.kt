@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity(),
         DaggerActivityComponent.create().inject(this)
 
         presenter.setTargetView(this)
-        presenter.callNewsAPI()
-        //presenter.callEnglandLeague()
+        //presenter.callNewsAPI()
+        presenter.callEnglandLeague()
     }
 
     override fun updateListNews(listNews: List<Articles>?) {
